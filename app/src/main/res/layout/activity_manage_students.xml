@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--View all the students and link add student-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvManageStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Students"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#DC704A"
+        android:fontFamily="@font/montserrat_black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- RecyclerView to show student list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tvManageStudents"
+        android:layout_above="@id/btnAddStudent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Add Student Button -->
+    <Button
+        android:id="@+id/btnAddStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:textStyle="bold"
+        android:backgroundTint="#6c8887"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:elevation="4dp" />
+</RelativeLayout>
