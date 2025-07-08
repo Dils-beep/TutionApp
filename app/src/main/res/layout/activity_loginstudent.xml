@@ -8,13 +8,31 @@
     android:background="#FFFFFF"
     tools:context=".StudentLoginActivity">
 
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvStudentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Login"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#DC704A"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_black"
+        android:shadowColor="#66000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
     <!-- Login Image -->
     <ImageView
         android:id="@+id/imgStudentLogin"
         android:layout_width="334dp"
         android:layout_height="317dp"
+        android:layout_below="@id/tvStudentTitle"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="Student Login Image"
         android:src="@drawable/loginstudent" />
 

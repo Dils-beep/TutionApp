@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminLoginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".AdminLoginActivity">
+
+    <!-- Admin Image -->
+    <ImageView
+        android:id="@+id/imgAdminLogin"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tvAdminTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/loginadmin"
+        android:contentDescription="Admin Login Image" />
+
+    <!-- Page Title -->
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#DC704A"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_black"
+        android:shadowColor="#66000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/etAdminUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAdminLogin"
+        android:layout_marginTop="40dp"
+        android:hint="Username"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@android:drawable/ic_menu_myplaces" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etAdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAdminUsername"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@android:drawable/ic_lock_lock" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAdminPassword"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#6c8887"
+        android:elevation="4dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

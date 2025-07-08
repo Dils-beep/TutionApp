@@ -28,15 +28,15 @@
     <!-- Login Button -->
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="300dp"
-        android:layout_height="55dp"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
         android:layout_below="@id/tvWelcome"
-        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#6c8887"
+        android:elevation="7dp"
         android:text="Login"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:backgroundTint="#6c8887"
-        android:elevation="7dp" />
+        android:textStyle="bold" />
 </RelativeLayout>
