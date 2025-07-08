@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="?attr/selectableItemBackground">
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
 
-    <TextView
-        android:id="@+id/tvStudentName"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Student Name"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#000" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvStudentUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="14sp"
-        android:textColor="#666" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStudentUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
