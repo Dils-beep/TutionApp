@@ -19,17 +19,31 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp" />
 
+
+    <!-- Search Bar -->
+
     <!-- RecyclerView to show student list -->
+
+    <!-- Add Student Button -->
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="84dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search by name or subject" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerStudents"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_below="@id/tvManageStudents"
         android:layout_above="@id/btnAddStudent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-42dp" />
 
-    <!-- Add Student Button -->
     <Button
         android:id="@+id/btnAddStudent"
         android:layout_width="match_parent"

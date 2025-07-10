@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add / Update Teacher"
+            android:text="Add Teacher"
             android:textSize="22sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -90,5 +90,7 @@
             android:textColor="#FFFFFF"
             android:padding="12dp"
             android:elevation="4dp" />
+
+
     </LinearLayout>
 </ScrollView>

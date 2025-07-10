@@ -22,129 +22,131 @@
             android:fontFamily="@font/montserrat_black"
             android:layout_marginBottom="24dp" />
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Other input fields like name, username, email etc -->
+
+            <EditText
+                android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <!-- Other input fields like name, username, email etc -->
-
-                <EditText
-                    android:id="@+id/etName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:padding="12dp"
-                    android:inputType="textPersonName" />
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
 
 
-                <EditText
-                    android:id="@+id/etUsername"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Username"
-                    android:padding="12dp"
-                    android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:padding="12dp" />
 
-                <!-- New Password Field -->
-                <EditText
-                    android:id="@+id/etPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:padding="12dp"
-                    android:inputType="textPassword"
-                    android:layout_below="@id/etUsername" />
+            <!-- New Password Field -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etUsername"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp" />
 
-                <!-- ... rest of the fields ... -->
+            <!-- ... rest of the fields ... -->
 
-                <EditText
-                    android:id="@+id/etEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:padding="12dp"
-                    android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
 
-                <EditText
-                    android:id="@+id/etPhone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Phone"
-                    android:padding="12dp"
-                    android:inputType="phone" />
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:padding="12dp" />
 
-                <EditText
-                    android:id="@+id/etGrade"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Grade"
-                    android:padding="12dp"
-                    android:inputType="text" />
+            <EditText
+                android:id="@+id/etGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Grade"
+                android:inputType="text"
+                android:padding="12dp" />
 
-                <!-- Subject selection -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Select Subjects"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="16dp" />
+            <!-- Subject selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Subjects"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <CheckBox
-                    android:id="@+id/cbEnglish"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="English Language" />
+            <CheckBox
+                android:id="@+id/cbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English Language" />
 
-                <CheckBox
-                    android:id="@+id/cbMath"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Mathematics" />
+            <CheckBox
+                android:id="@+id/cbMath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mathematics" />
 
-                <CheckBox
-                    android:id="@+id/cbScience"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Science" />
+            <CheckBox
+                android:id="@+id/cbScience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science" />
 
-                <CheckBox
-                    android:id="@+id/cbHistory"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="History" />
+            <CheckBox
+                android:id="@+id/cbHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History" />
 
-                <CheckBox
-                    android:id="@+id/cbSinhala"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sinhala" />
+            <CheckBox
+                android:id="@+id/cbSinhala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinhala" />
 
-                <CheckBox
-                    android:id="@+id/cbCommerce"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Commerce" />
+            <CheckBox
+                android:id="@+id/cbCommerce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commerce" />
 
-                <CheckBox
-                    android:id="@+id/cbICT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ICT" />
+            <CheckBox
+                android:id="@+id/cbICT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ICT" />
 
-                <Button
-                    android:id="@+id/btnRegister"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Register Student"
-                    android:layout_marginTop="24dp"
-                    android:backgroundTint="#6c8887"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:padding="12dp" />
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#6c8887"
+                android:padding="12dp"
+                android:text="Register Student"
+                android:textColor="#fff"
+                android:textStyle="bold" />
 
-            </LinearLayout>
 
-            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </ScrollView>
