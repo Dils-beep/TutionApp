@@ -1,4 +1,4 @@
 package com.example.tutionapp;
 
-public class ReportsActivity1 {
+public class MaterialsActivity {
 }

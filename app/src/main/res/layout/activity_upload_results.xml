@@ -2,19 +2,53 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back"
+            android:scaleType="fitCenter" />
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="Upload Student Result"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#DC704A"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Username -->
         <EditText
-            android:id="@+id/etStudentID"
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Student ID" />
+            android:hint="Username" />
 
+        <!-- Student Name -->
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:layout_marginTop="12dp" />
+
+        <!-- Subject -->
         <EditText
             android:id="@+id/etSubject"
             android:layout_width="match_parent"
@@ -22,6 +56,15 @@
             android:hint="Subject"
             android:layout_marginTop="12dp" />
 
+        <!-- Grade -->
+        <EditText
+            android:id="@+id/etGrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade (e.g. 10, 11)"
+            android:layout_marginTop="12dp" />
+
+        <!-- Marks -->
         <EditText
             android:id="@+id/etMarks"
             android:layout_width="match_parent"
@@ -30,12 +73,13 @@
             android:inputType="number"
             android:layout_marginTop="12dp" />
 
+        <!-- Upload Button -->
         <Button
             android:id="@+id/btnUploadResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Upload Result"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="24dp"
             android:backgroundTint="#6c8887"
             android:textColor="#fff" />
     </LinearLayout>
