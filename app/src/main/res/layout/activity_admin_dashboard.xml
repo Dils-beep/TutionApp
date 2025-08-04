@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,44 +19,151 @@
             android:text="Admin Dashboard"
             android:textSize="26sp"
             android:textStyle="bold"
-            android:textColor="#DC704A"
-            android:fontFamily="@font/montserrat_black"
-            android:layout_marginBottom="24dp"/>
+            android:textColor="#6c8887"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/montserrat_black" />
 
-        <!-- Buttons -->
-        <Button
-            android:id="@+id/btnManageStudents"
+        <!-- Grid of Cards -->
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Manage Students"
-            android:backgroundTint="#6c8887"
-            android:textColor="#fff"
-            android:layout_marginBottom="16dp"/>
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignMargins">
 
-        <Button
-            android:id="@+id/btnManageTeachers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Manage Teachers"
-            android:backgroundTint="#6c8887"
-            android:textColor="#fff"
-            android:layout_marginBottom="16dp"/>
+            <!-- Manage Students -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardManageStudents"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="6dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
 
-        <Button
-            android:id="@+id/btnAssignCourses"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Assign Students to Teachers"
-            android:backgroundTint="#6c8887"
-            android:textColor="#fff"
-            android:layout_marginBottom="16dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnViewReports"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View Reports"
-            android:backgroundTint="#6c8887"
-            android:textColor="#fff"/>
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_group"
+                        android:tint="#6c8887" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage Students"
+                        android:textColor="#6c8887"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Manage Teachers -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardManageTeachers"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="6dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_group"
+                        android:tint="#6c8887" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Manage Teachers"
+                        android:textColor="#6c8887"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Assign Students to Teachers -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAssignCourses"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="6dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_assignment"
+                        android:tint="#6c8887" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assign Students"
+                        android:textColor="#6c8887"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- View Reports -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewReports"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="6dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_upload"
+                        android:tint="#6c8887" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Reports"
+                        android:textColor="#6c8887"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
     </LinearLayout>
 </ScrollView>
